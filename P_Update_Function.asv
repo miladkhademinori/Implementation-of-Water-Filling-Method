@@ -1,0 +1,10 @@
+function P = P_Update_Function ( K_Star_FullPower , K_Star_Negative , H_Sorted , Landa , P_Max )
+
+for i = K_Star_FullPower:K_Star_Negative 1 : length(P)
+    if i >= K_Star_FullPower
+        P(1,i) = P_Max;
+    elseif K_Star_FullPower < i && i 
+    end
+    P(1,i) = Landa- (1/H_Sorted(1,i));
+end
+end
